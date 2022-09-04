@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/5a6da9b95b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/menu.css">
+    <link rel="stylesheet" href="../src/doe.css">
+    <title>2 Informática</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> 2 Info </div>
+    
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+    
+            <ul>
+                <li> <a href="../index.html"> Home </a> </li>
+                <li> <a href="https://www.instagram.com/dementadores.ofc/"> Instagram</a> </li>
+                <li> <a href="https://www.tiktok.com/@dementadores.ofc"> TikTok</a> </li>
+                <li> <a href="#"> Turma</a> </li>
+                <li> <a href="./doe.html">Doe</a> </li>
+                <li> <a href="./contatos.html"> Contatos</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+<main id="hidden">
+    <div class="parte-principal">
+        <div class="container">
+            <form action="https://api.sheetmonkey.io/form/aMjHXfjT19faZEqrnVCSwd" method="post">
+                <div class="form-inicial">
+                    <label for="Nome">Nome</label>
+                    <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome" required />
+
+                    <label for="Bairro">Bairro</label>
+                    <input type="text" id="bairro" name="Bairro" placeholder="Digite seu Bairro" required />
+
+                    <label for="Rua">Rua</label>
+                    <input type="text" id="rua" name="Rua" placeholder="Digite sua rua" required/>
+
+                    <label for="Número">Número</label>
+                    <input type="text" id="num" name="Número" placeholder="Digite o número da casa" required/>
+
+                    <label for="Quantidade (Kg)">Quantidade doada (Kg)</label>
+                    <input type="text" id="kg" name="Quantidade (Kg)" placeholder="Digite o peso em Kg" required/>
+
+                    <label for="Telefone">Telefone</label>
+                    <input type="tel" id="tel" name="Telefone" placeholder="Digite seu número" ng-pattern="^\([1-9]{2}\) [9]{1}[0-9]{4,5}-[0-9]{4}$" required/>
+                </div>
+                    <input type="submit" id="enviar-form" onclick="formularioEnviado()" />
+            </form>
+            </div>
+        </div>
+</main>
+</section>
+</body>
+<script>
+    var ul = document.querySelector('nav ul');
+var menuBtn = document.querySelector('.menu-btn i');
+var doe = document.querySelector("#hidden")
+
+function menuShow() {
+    if (ul.classList.contains('open')) {
+        ul.classList.remove('open');
+        doe.classList.remove('hidden');
+        document.getElementById("text4").style.display = "inline";
+
+        
+    }else{
+        ul.classList.add('open');
+        doe.classList.add('hidden');
+        document.getElementById("text4").style.display = "none";
+    }
+}
+</script>
+<script src="../script.js"></script>
+</html>

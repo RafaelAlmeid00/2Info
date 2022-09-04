@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/5a6da9b95b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/menu.css">
+    <link rel="stylesheet" href="../src/contato.css">
+    <title>Contatos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">2 Info </div>
+    
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+    
+            <ul>
+                <li> <a href="../index.html"> Home </a> </li>
+                <li> <a href="https://www.instagram.com/dementadores.ofc/"> Instagram</a> </li>
+                <li> <a href="https://www.tiktok.com/@dementadores.ofc"> TikTok</a> </li>
+                <li> <a href="#"> Turma</a> </li>
+                <li> <a href="./doe.html">Doe</a> </li>
+                <li> <a href="./contatos.html"> Contatos</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article class="contatos">
+            <p class="title">Entre em contato para saber mais ou ajudar:</p>
+            <a href="https://api.whatsapp.com/send?phone=5524999980064&text=Gostaria%20de%20ajudar%20com%20a%20doa%C3%A7%C3%A3o%20para%20sua%20turma."><p class="tex">Número: 24999980064 (Rafael)</p></a>
+               <a href="https://api.whatsapp.com/send?phone=5524999755497&text=Gostaria%20de%20ajudar%20com%20a%20doa%C3%A7%C3%A3o%20para%20sua%20turma."> <p class="tex">Número: 24999755497 (Giovana)</p></a>
+                <a href="https://api.whatsapp.com/send?phone=5524998709056&text=Gostaria%20de%20ajudar%20com%20a%20doa%C3%A7%C3%A3o%20para%20sua%20turma."> <p class="tex">Número: 24998709056 (Mariana)</p></a>
+                <a href="https://api.whatsapp.com/send?phone=5524988111841&text=Gostaria%20de%20ajudar%20com%20a%20doa%C3%A7%C3%A3o%20para%20sua%20turma."> <p class="tex">Número: 24988111841 (Milena)</p></a>
+                <a href="https://api.whatsapp.com/send?phone=5524993269984&text=Gostaria%20de%20ajudar%20com%20a%20doa%C3%A7%C3%A3o%20para%20sua%20turma."> <p class="tex">Número: 24993269984 (Thamyres)</p></a>
+        </article>
+        <article class="img">
+            <img src="../imgs/dementador.png">
+        </article>
+        <article class="textos" id="text4">
+            <h2 style="color: #fff" class="glitch" data-text="Acho que existem dementadores invisíveis ao meu redor. Eles estão me consumindo.">Acho que existem dementadores invisíveis ao meu redor. <br> Eles estão me consumindo.</h2>
+        </article>
+    </section>
+</body>
+<script>
+    var ul = document.querySelector('nav ul');
+var menuBtn = document.querySelector('.menu-btn i');
+
+function menuShow() {
+    if (ul.classList.contains('open')) {
+        ul.classList.remove('open');
+        document.getElementById("text4").style.display = "inline";
+    }else{
+        ul.classList.add('open');
+        document.getElementById("text4").style.display = "none";
+    }
+}
+</script>
+<script src="../script.js"></script>
+</html>
