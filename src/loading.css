@@ -85,4 +85,5 @@ button:hover {
 #loading svg {
     height: auto;
     text-align: center;
+    margin-left: 25px;
 }
