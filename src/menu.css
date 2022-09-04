@@ -34,11 +34,13 @@ nav .logo{
     width: 200px;
     height: 100%;
 }
-header nav ul{
+header nav ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 30px;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 nav ul li{
@@ -65,7 +67,7 @@ nav .menu-btn i{
     cursor: pointer;
     display: none;
 }
-@media (max-width: 920px) {
+@media (max-width: 900px) {
     nav .menu-btn i{
         display: block;
     }
@@ -85,12 +87,10 @@ nav .menu-btn i{
         left: 0;
     }
     nav ul li{
-        width: 100%;
-        margin: 50px 0;
-        height: 50px;
+        margin-top: 50px;
     }
     nav ul li a {
-        font-size: 23px;
+        font-size: 16px;
     }
     nav ul li a.active,
     nav ul li a:hover {
@@ -102,20 +102,27 @@ nav .menu-btn i{
     .contatos {
         margin-top: 50px;
     }
+    
+p, h1, h2, h3, h4, span {
+    font-family:Arial, Helvetica, sans-serif;
+}
 }
 
-.logo {
-    font-family: 'Who asks Satan', sans-serif;
-}
 
 @media screen and (max-height: 780px) and (min-height: 500px) {
-    nav ul {
+    body header nav ul {
         margin: 0px;
     }
     nav .logo {
-        font-size: 50px;
-    width: 100px;
-    margin-left: -60px;
-    margin-top: 10px;
+        font-size: 35px;
+        width: 100px;
+        margin-left: -60px;
+        margin-top: 20px;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p, h1, h2, h3, h4, span {
+        font-family:Arial, Helvetica, sans-serif;
     }
 }

@@ -210,9 +210,9 @@ p {
   }
 
   @media screen and (max-height: 920px) and (min-height: 701px) {
-    .textos {
+    section .textos {
         margin: 0px 20px;
-        font-size: 28px;
+        font-size: 20px;
     }  
     .imgs img {
       width: 280px;
@@ -220,16 +220,22 @@ p {
     nav ul li {
       height: 50px;
     }
+    .glitch {
+      font-size: 16px;
+    }
 }
 
 @media screen and (max-height: 700px) and (min-height: 500px) {
   section .textos {
-    font-size: 18px;
-  }
+    font-size: 14px;
+    }
   nav ul li {
     height: 30px;
   }
   .imgs img {
     width: 280px;
+  }
+  .glitch {
+    font-size: 16px;
   }
 }
