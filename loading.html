@@ -36,9 +36,7 @@
         </section>
 </body>
 <script>
-    
-    var audio = document.getElementById("myaudio");
-  audio.volume = 0.4;
+
 
     const btnsim = document.getElementById("sim");
     const btnnao = document.getElementById("nao");
@@ -57,7 +55,7 @@
           document.getElementById("one").style.display = "none";
             document.getElementById("two").style.display = "inline";
         
-        }, 2000);
+        }, 1500);
     })
 
     btnnao.addEventListener('click', function() {
@@ -66,7 +64,7 @@
 
         setTimeout(()=>{
             audio.innerHTML = "<source src='./img/X2Download.com - Efeito sonoro terror (128 kbps).mp3' type='audio/mpeg'>"   
-    }, 1600) ;
+    }, 1500) ;
 
     var i = setInterval(function () {
     
@@ -103,5 +101,9 @@
     btnnao2.addEventListener('click', function() {
         document.getElementById("nao2").style.display = "none";
     })
+
+        
+    var vol = document.getElementById("myaudio");
+  vol.volume = 0.4;
 </script>
 </html>
