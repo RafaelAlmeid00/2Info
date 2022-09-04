@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/5a6da9b95b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/menu.css">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>2 Informática</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> 2 Info </div>
+    
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+    
+            <ul>
+                <li> <a href="./index.html"> Home </a> </li>
+                <li> <a href="https://www.instagram.com/dementadores.ofc/"> Instagram</a> </li>
+                <li> <a href="https://www.tiktok.com/@dementadores.ofc"> TikTok</a> </li>
+                <li> <a href="#"> Turma</a> </li>
+                <li> <a href="./routes/doe.html">Doe</a> </li>
+                <li> <a href="./routes/contatos.html"> Contatos</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article class="imgs">
+            <img src="./imgs/dementador.png">
+        </article>
+        <article class="textos">
+            <p class="text1">Bem-vindo ao site da turma 2 Informatica</p>
+            <p class="text2">Caso esteja no celular, clique no menu para exibi-lo</p>
+            <p class="text3">Siga-nos nas Redes Sociais:</p>
+        </article>
+        <article id="icons">
+           
+        </article>
+        <article class="textos" id="text4" style="display: none;">
+            <h2 style="color: #fff" class="glitch" data-text="A SUA FELICIDADE ACABA AQUI...">A SUA FELICIDADE ACABA AQUI...</h2>
+        </article>
+    </section>
+</body>
+<script>
+    var ul = document.querySelector('nav ul');
+var menuBtn = document.querySelector('.menu-btn i');
+
+function menuShow() {
+    if (ul.classList.contains('open')) {
+        ul.classList.remove('open');
+        document.getElementById("text4").style.display = "inline";
+    }else{
+        ul.classList.add('open');
+        document.getElementById("text4").style.display = "none";
+    }
+}
+</script>
+<script src="./script.js"></script>
+</html>
