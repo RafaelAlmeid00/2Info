@@ -40,7 +40,7 @@ header nav ul {
     list-style: none;
     align-content: center;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 nav ul li{
@@ -71,7 +71,7 @@ nav .menu-btn i{
     nav .menu-btn i{
         display: block;
     }
-    nav ul{
+    header nav ul{
         position: fixed;
         top: 80px;
         left: -100%;
@@ -82,6 +82,12 @@ nav .menu-btn i{
         display: block;
         transition: all 0.3s ease;
         margin: 0px;
+        display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     }
     nav ul.open{
         left: 0;
@@ -110,8 +116,14 @@ p, h1, h2, h3, h4, span {
 
 
 @media screen and (max-height: 780px) and (min-height: 500px) {
-    body header nav ul {
+     header nav ul {
         margin: 0px;
+        display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     }
     nav .logo {
         font-size: 35px;
