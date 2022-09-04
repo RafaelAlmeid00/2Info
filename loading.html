@@ -4,9 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/loading.css">
+    <title>Loading</title>
 </head>
 <body>
+    <audio autoplay id="myaudio"> <!--agora com autoplay e sem controls-->
+    </audio>
+    <body>
+        <section>
+        <div id="one" style="display: block;">
+            <p>Deseja usar o som do site?</p>
+            <div>
+                <button id="sim">Sim</button>
+                <button id="nao">Não</button>
+            </div>
+        </div>
+        <div id="two" style="display: none">
+            <p>Aceita respeitar o site e a turma?</p>
+            <div>
+                <button id="sim2">Sim</button>
+                <button id="nao2">Não</button>
+            </div>
+        </div>
+        <div id="loading" style="display: none">
+            <svg width="200" height="200" viewBox="0 0 40 60">
     
+                <polygon fill="none" class="triangle" stroke="#fff" stroke-width="1" points="16,1 32,32 1, 32" />
+                <text x="0" y="45" class="loading" fill="#fff"> LOADING </text>
+            </svg>
+            </div>
+        </section>
 </body>
+<script>
+    
+    var audio = document.getElementById("myaudio");
+  audio.volume = 0.4;
+
+    const btnsim = document.getElementById("sim");
+    const btnnao = document.getElementById("nao");
+    const audio = document.querySelector("audio")
+    const trocabtnnao = document.querySelector("#nao")
+    const trocabtnsim = document.querySelector("#sim")
+
+
+    btnsim.addEventListener('click', function() {
+        audio.innerHTML = "<source src='./img/X2Download.com - Efeito sonoro terror (128 kbps).mp3' type='audio/mpeg'>"
+
+        var i = setInterval(function () {
+    
+           clearInterval(i);
+          
+          document.getElementById("one").style.display = "none";
+            document.getElementById("two").style.display = "inline";
+        
+        }, 2000);
+    })
+
+    btnnao.addEventListener('click', function() {
+        trocabtnnao.innerHTML = "Sim"
+        trocabtnsim.innerHTML = "Não"
+
+        setTimeout(()=>{
+            audio.innerHTML = "<source src='./img/X2Download.com - Efeito sonoro terror (128 kbps).mp3' type='audio/mpeg'>"   
+    }, 1600) ;
+
+    var i = setInterval(function () {
+    
+        clearInterval(i);
+       
+       document.getElementById("one").style.display = "none";
+         document.getElementById("two").style.display = "inline";
+     
+     }, 1000);
+    })
+
+    const btnsim2 = document.getElementById("sim2");
+    const btnnao2 = document.getElementById("nao2");
+
+
+    btnsim2.addEventListener('click', function() {
+        var i = setInterval(function () {
+    
+           clearInterval(i);
+          
+          document.getElementById("two").style.display = "none";
+            document.getElementById("loading").style.display = "inline";
+           
+        
+        }, 1000);
+
+        setTimeout(()=>{
+            window.location.href = "https://dementadores.herokuapp.com/index.html";
+            
+         }, 2000);
+
+    })
+
+    btnnao2.addEventListener('click', function() {
+        document.getElementById("nao2").style.display = "none";
+    })
+</script>
 </html>

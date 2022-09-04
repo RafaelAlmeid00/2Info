@@ -1,4 +1,5 @@
-
+var audio = document.getElementById("myaudio");
+  audio.volume = 0.4;
 
 function typeWrite(elemento1, elemento2, elemento3){
     const texto1Array = elemento1.innerHTML.split('');
