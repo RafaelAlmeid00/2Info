@@ -34,7 +34,7 @@ nav .logo{
     width: 200px;
     height: 100%;
 }
-nav ul{
+header nav ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
