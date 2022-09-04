@@ -1,0 +1,235 @@
+section {
+    display: flex;
+    justify-content: flex-start;
+            align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column
+}
+
+section .textos {
+        height: auto;
+    font-size: 28px;
+    font-family: 'Who asks Satan', sans-serif;
+    text-align: center;
+                                                
+}
+
+p {
+    color: white;
+}
+
+.imgs img {
+    width: 400px;
+    margin-top: 50px;
+}
+
+#icons {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#icons a{
+    text-align: center;
+    color: white;
+    margin: 0px 20px;
+    font-size: 32px;
+}
+
+.glitch {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -2px 0 red;
+    top: 0;
+    color: white;
+    background: #5e0080;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch1 2s infinite linear alternate-reverse;
+    width: 100%;
+  }
+  
+  .glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: white;
+    background: rgb(255, 0, 0);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch2 3s infinite linear alternate-reverse;
+    width: 100%;
+  }
+
+  @keyframes glitch1 {
+    0% {
+      clip: rect(59px, 9999px, 84px, 0);
+    }
+    5% {
+      clip: rect(46px, 9999px, 36px, 0);
+    }
+    10% {
+      clip: rect(72px, 9999px, 84px, 0);
+    }
+    15% {
+      clip: rect(58px, 9999px, 43px, 0);
+    }
+    20% {
+      clip: rect(34px, 9999px, 62px, 0);
+    }
+    25% {
+      clip: rect(63px, 9999px, 84px, 0);
+    }
+    30% {
+      clip: rect(59px, 9999px, 73px, 0);
+    }
+    35% {
+      clip: rect(15px, 9999px, 44px, 0);
+    }
+    40% {
+      clip: rect(7px, 9999px, 81px, 0);
+    }
+    45% {
+      clip: rect(63px, 9999px, 35px, 0);
+    }
+    50% {
+      clip: rect(61px, 9999px, 98px, 0);
+    }
+    55% {
+      clip: rect(8px, 9999px, 41px, 0);
+    }
+    60% {
+      clip: rect(29px, 9999px, 32px, 0);
+    }
+    65% {
+      clip: rect(7px, 9999px, 55px, 0);
+    }
+    70% {
+      clip: rect(36px, 9999px, 60px, 0);
+    }
+    75% {
+      clip: rect(75px, 9999px, 83px, 0);
+    }
+    80% {
+      clip: rect(100px, 9999px, 16px, 0);
+    }
+    85% {
+      clip: rect(47px, 9999px, 22px, 0);
+    }
+    90% {
+      clip: rect(8px, 9999px, 45px, 0);
+    }
+    95% {
+      clip: rect(0, 900px, 0, 0);
+    }
+    100% {
+      clip: rect(0, 900px, 0, 0);
+    }
+  }
+  
+  @keyframes glitch2 {
+    0% {
+      clip: rect(7px, 9999px, 60px, 0);
+    }
+    5% {
+      clip: rect(3px, 9999px, 30px, 0);
+    }
+    10% {
+      clip: rect(75px, 9999px, 95px, 0);
+    }
+    15% {
+      clip: rect(30px, 9999px, 70px, 0);
+    }
+    20% {
+      clip: rect(58px, 9999px, 27px, 0);
+    }
+    25% {
+      clip: rect(67px, 9999px, 80px, 0);
+    }
+    30% {
+      clip: rect(36px, 9999px, 12px, 0);
+    }
+    35% {
+      clip: rect(98px, 9999px, 81px, 0);
+    }
+    40% {
+      clip: rect(99px, 9999px, 91px, 0);
+    }
+    45% {
+      clip: rect(88px, 9999px, 24px, 0);
+    }
+    50% {
+      clip: rect(62px, 9999px, 57px, 0);
+    }
+    55% {
+      clip: rect(17px, 9999px, 82px, 0);
+    }
+    60% {
+      clip: rect(17px, 9999px, 29px, 0);
+    }
+    65% {
+      clip: rect(80px, 9999px, 62px, 0);
+    }
+    70% {
+      clip: rect(35px, 9999px, 40px, 0);
+    }
+    75% {
+      clip: rect(43px, 9999px, 85px, 0);
+    }
+    80% {
+      clip: rect(55px, 9999px, 95px, 0);
+    }
+    85% {
+      clip: rect(67px, 9999px, 58px, 0);
+    }
+    90% {
+      clip: rect(8px, 9999px, 45px, 0);
+    }
+    95% {
+      clip: rect(0, 900px, 0, 0);
+    }
+    100% {
+      clip: rect(0, 900px, 0, 0);
+    }
+  }
+
+  a {
+   cursor: pointer; 
+  }
+
+  #icons a:hover {
+    color: #5e0080;
+  }
+
+  @media screen and (max-height: 920px) and (min-height: 701px) {
+    .textos {
+        margin: 0px 20px;
+        font-size: 28px;
+    }  
+    .imgs img {
+      width: 280px;
+    }
+    nav ul li {
+      height: 50px;
+    }
+}
+
+@media screen and (max-height: 700px) and (min-height: 500px) {
+  section .textos {
+    font-size: 18px;
+  }
+  nav ul li {
+    height: 30px;
+  }
+  .imgs img {
+    width: 280px;
+  }
+}
