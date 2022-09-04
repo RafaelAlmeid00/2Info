@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color: #0a0a0a;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+p {
+    color: white;
+}
+
+button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 200px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid #5e0080;
+}
+
+#one, #two {
+    text-align: center;
+}
+
+#one p, #two p {
+    padding-bottom: 30px;
+    font-size: 26px;
+}
+
+#one div button, #two div button {
+    margin: 0px 20px;
+}
+
+
+.loading{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 7px;
+    animation: blink .9s ease-in-out infinite;
+}
+
+.triangle{
+    stroke-dasharray: 17;
+    animation: dash 2.5s cubic-bezier(0.35,0.04,0.63,0.95) infinite;
+    
+}
+
+
+@keyframes dash {
+    0%{
+        stroke-dashoffset:0 ;
+    }
+
+    100%{
+        stroke-dashoffset:136 ;
+    }
+}
+
+@keyframes blink{
+    50%{
+        opacity: 0;
+    }
+}
+
+#loading svg {
+    height: auto;
+    text-align: center;
+}
